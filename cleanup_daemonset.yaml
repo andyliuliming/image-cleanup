@@ -29,7 +29,7 @@ spec:
           args:
             - >
               while true; do
-                docker system prune --all --filter until=$(date -d "15 days ago" +%s) -f;
+                docker system prune --all;
                 sleep 86400;
               done
           volumeMounts:
