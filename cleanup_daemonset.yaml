@@ -22,7 +22,7 @@ spec:
               memory: "50Mi"
           securityContext:
             privileged: true
-          image: aksrepos.azurecr.io/base-docker:v0.0.5
+          image: aksrepos.azurecr.io/fundamental/base-docker:v0.0.5
           imagePullPolicy: IfNotPresent
           name: docker-image-cleanup
           command: ["/bin/bash", "-c"]
